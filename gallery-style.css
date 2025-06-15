@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+
+.gallery-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.hobby-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hobby-card h2 {
+    margin: 15px 0 10px;
+    color: darkslategray;
+}
+
+.hobby-card p {
+    padding: 0 15px 10px;
+    font-size: 15px;
+    color: dimgray;
+}
+
+.hobby-card a {
+    display: inline-block;
+    margin: 10px;
+    color: blue;
+    font-weight: bold;
+}
+
+.hobby-card a:hover {
+    text-decoration: underline;
+}
